@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SOC-PROOF | Sign In</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+
+    <!-- Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid navbar">
+        <!-- Site Logo -->
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+
+        <!-- Hamburger / Close Icon -->
+        <div class="mobile-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="navMenu">
+          <ul>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">API</a></li>
+
+            <!-- Language Dropdown -->
+            <li>
+              <div class="language-selector">
+                <button class="lang-btn" onclick="toggleDropdown()">
+                  English ⮟
+                </button>
+                <ul class="dropdown" id="lang-dropdown">
+                  <li><a href="#">हिन्दी</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <!-- Auth Buttons (Mobile View) -->
+            <li class="mobile-only auth-buttons">
+              <span class="outline box">Sign up</span>
+              <span class="filled box">Sign in</span>
+            </li>
+            <!-- Auth Buttons (Desktop View) -->
+            <div class="auth-buttons desktop-only">
+              <span class="outline box">Sign up</span>
+              <span class="filled box">Sign in</span>
+            </div>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <div class="bg"></div>
+      <section class="hero fade-up">
+        <img src="assets/images/decor1.svg" class="hero-icon left" />
+        <img src="assets/images/decor2.svg" class="hero-icon right" />
+        <div class="container">
+          <h1>SMM Panel <span>#1</span> for Resellers</h1>
+          <p>
+            Better service provider for all panels worldwide! Incredible
+            prices!<br />
+            The lowest on the market in all categories
+          </p>
+
+          <!-- Login Form -->
+          <form class="login-form">
+            <input type="text" placeholder="Username" />
+            <input type="password" placeholder="Password" />
+            <button type="submit" class="box filled">Sign in</button>
+          </form>
+
+          <!-- Login Options -->
+          <div class="form-links">
+            <label><input type="checkbox" /> Remember me</label>
+            <a href="#">Forgot password?</a>
+            <span>Do not have an account? <a href="#">Sign up</a></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social Media Cards Section -->
+      <section class="cards-section container fade-up">
+        <div class="card">
+          <img src="./assets/images/instagram.svg" alt="Instagram" />
+          <p>Instagram Likes from $0.04 / 1000</p>
+        </div>
+        <div class="card">
+          <img src="./assets/images/telegram.svg" alt="Telegram" />
+          <p>Telegram Reactions from $0.019 / 1000</p>
+        </div>
+        <div class="card">
+          <img src="./assets/images/youtube.svg" alt="YouTube" />
+          <p>YouTube Likes from $0.4 / 1000</p>
+        </div>
+        <div class="card">
+          <img src="./assets/images/tiktok.svg" alt="TikTok" />
+          <p>TikTok Followers from $0.34 / 1000</p>
+        </div>
+      </section>
+
+      <!-- Scrolling Slider Section -->
+      <section class="slider-section reveal">
+        <div class="slider-wrapper" id="slider">
+          <!-- Repeated slides for infinite effect -->
+          <img src="./assets/images/facebook_icon.svg" alt="Facebook" />
+          <img src="./assets/images/instagram_icon.svg" alt="Instagram" />
+          <img src="./assets/images/telegram_icon.svg" alt="Telegram" />
+          <img src="./assets/images/tiktok_icon.svg" alt="TikTok" />
+          <img src="./assets/images/twitter_icon.svg" alt="Twitter" />
+          <img src="./assets/images/youtube_icon.svg" alt="YouTube" />
+
+          <!-- Duplicate Slides -->
+          <img src="./assets/images/facebook_icon.svg" alt="Facebook" />
+          <img src="./assets/images/instagram_icon.svg" alt="Instagram" />
+          <img src="./assets/images/telegram_icon.svg" alt="Telegram" />
+          <img src="./assets/images/tiktok_icon.svg" alt="TikTok" />
+          <img src="./assets/images/twitter_icon.svg" alt="Twitter" />
+          <img src="./assets/images/youtube_icon.svg" alt="YouTube" />
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="stats reveal">
+        <img src="assets/images/decor4.svg" id="heart-decor" />
+        <div class="container">
+          <h2>SOC-PROOF is:</h2>
+          <div class="stat-grid">
+            <div class="stat">
+              <span>115037381</span>
+              <p>Orders processed</p>
+            </div>
+            <div class="stat">
+              <span>48376</span>
+              <p>Active customers and resellers</p>
+            </div>
+            <div class="stat">
+              <span>from $0.001 / 1K</span>
+              <p>Our prices start</p>
+            </div>
+            <div class="stat">
+              <span>1 second</span>
+              <p>An order is created every</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="telegram-cta reveal">
+        <div class="telegram-cta-container">
+          <div>
+            <h2>Join to our Telegram channel</h2>
+            <div class="arrow-wrap">
+              <img
+                src="assets/images/arrow_right.svg"
+                alt="arrow"
+                class="arrow-img"
+              />
+            </div>
+          </div>
+          <p class="cta-subtext">Stay with us and follow the news</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer reveal">
+      <div class="footer-container">
+        <div class="footer-top">
+          <div class="footer-left">
+            <img
+              src="assets/images/logo.png"
+              alt="SOC-PROOF Logo"
+              class="footer-logo"
+            />
+          </div>
+          <div class="footer-right">
+            <ul class="footer-links">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">API</a></li>
+              <li class="f-margin">
+                <a href="#" class="outline box">Sign up</a>
+              </li>
+              <li class="f-margin">
+                <a href="#" class="filled box">Sign in</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p>&copy; 2018-2025 Partner Panel. All rights reserved.</p>
+          </div>
+          <div class="footer-bottom-right">
+            <p>Privacy Policy</p>
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="scroll-top outline-btn"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        ↑
+      </button>
+
+      <a href="#" class="telegram-btn" aria-label="Join Telegram">
+        <img src="/assets/images/telegram.svg" alt="Telegram" />
+      </a>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
