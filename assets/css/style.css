@@ -565,7 +565,7 @@ nav {
       rgba(45, 25, 117, 1) 82%,
       rgba(18, 17, 17, 1) 100%
     ),
-    url("/assets/images/telegram_bg.png");
+    url("./assets/images/telegram_bg.png");
 
   background-repeat: no-repeat;
   background-position: center center;
